@@ -38,9 +38,17 @@ public class Stationary extends Product {
     }
 
     @Override
-    public String toString() {
-        return "Stationary [ID=" + getID() + ", name=" + getName() + ", price=" + getPrice() + ", quantity="
-                + getQuantity() + ", chatLieu=" + chatLieu + ", mau=" + mau + ", nsx=" + nsx + "]";
+    public void display() {
+        System.out.println("ID: " + ID + ", Name: " + name + ", Price: " + price + ", Quantity: "
+                + quantity + ", ChatLieu: " + chatLieu + ", Mau: " + mau + ", Nsx: " + nsx);
     }
+
+    // @Override
+    // public String toString() {
+    // return "Stationary [ID=" + getID() + ", name=" + getName() + ", price=" +
+    // getPrice() + ", quantity="
+    // + getQuantity() + ", chatLieu=" + chatLieu + ", mau=" + mau + ", nsx=" + nsx
+    // + "]";
+    // }
 
 }

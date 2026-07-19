@@ -1,4 +1,4 @@
-public class Product {
+public abstract class Product {
 
     protected String ID;
     protected String name;
@@ -47,12 +47,15 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public void display() {
-        System.out.println("ID: " + ID + ", Name: " + name + ", Price: " + price + ", Quantity: " + quantity);
-    }
+    public abstract void display();
+    // public void display() {
+    // System.out.println("ID: " + ID + ", Name: " + name + ", Price: " + price + ",
+    // Quantity: " + quantity);
+    // }
 
-    @Override
-    public String toString() {
-        return "product [ID=" + ID + ", name=" + name + ", price=" + price + ", quantity=" + quantity + "]";
-    }
+    // @Override
+    // public String toString() {
+    // return "product [ID=" + ID + ", name=" + name + ", price=" + price + ",
+    // quantity=" + quantity + "]";
+    // }
 }

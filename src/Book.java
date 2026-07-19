@@ -49,14 +49,22 @@ public class Book extends Product {
         this.soTrang = soTrang;
     }
 
+    @Override
     public void display() {
-        System.out.println("ID: " + ID + ", Name: " + name + ", Price: " + price + ", Quantity: " + quantity);
+        System.out.println("ID: " + ID + ", Name: " + name + ", Price: " + price + ", Quantity: "
+                + quantity + ", TacGia: " + tacGia + ", SoTrang: " + soTrang);
     }
 
-    @Override
-    public String toString() {
-        return "Book [ID=" + getID() + ", name=" + getName() + ", price=" + getPrice() + ", quantity="
-                + getQuantity() + ", tacGia=" + tacGia + ", soTrang=" + soTrang + "]";
-    }
+    // public void display() {
+    // System.out.println("ID: " + ID + ", Name: " + name + ", Price: " + price + ",
+    // Quantity: " + quantity);
+    // }
+
+    // @Override
+    // public String toString() {
+    // return "Book [ID=" + getID() + ", name=" + getName() + ", price=" +
+    // getPrice() + ", quantity="
+    // + getQuantity() + ", tacGia=" + tacGia + ", soTrang=" + soTrang + "]";
+    // }
 
 }

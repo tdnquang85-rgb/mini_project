@@ -91,8 +91,9 @@ public class App {
 
                     for (int i = 0; i < listbook.size(); i++) {
                         if (listbook.get(i).getID().equals(ID)) {
-                            System.out.println(listbook.get(i));
-                            System.out.println(i);
+                            // System.out.println(listbook.get(i));
+                            listbook.get(i).display();
+                            System.out.println("the index of this book is :" + i);
 
                         }
                     }
@@ -104,7 +105,8 @@ public class App {
                     // search by name near exact
                     for (int i = 0; i < listbook.size(); i++) {
                         if (listbook.get(i).getName().equals(name)) {
-                            System.out.println(listbook.get(i));
+                            // System.out.println(listbook.get(i));
+                            listbook.get(i).display();
                             break;
                         }
                     }
@@ -119,7 +121,8 @@ public class App {
                     double maxPrice = sc.nextDouble();
                     for (int i = 0; i < listbook.size(); i++) {
                         if (listbook.get(i).getPrice() >= minPrice && listbook.get(i).getPrice() <= maxPrice) {
-                            System.out.println(listbook.get(i));
+                            // System.out.println(listbook.get(i));
+                            listbook.get(i).display();
 
                         }
                     }
@@ -229,8 +232,9 @@ public class App {
 
                     for (int i = 0; i < listst.size(); i++) {
                         if (listst.get(i).getID().equals(ID)) {
-                            System.out.println(listst.get(i));
-                            System.out.println(i);
+                            // System.out.println(listst.get(i));
+                            // System.out.println(i);
+                            listst.get(i).display();
 
                         }
                     }
@@ -242,7 +246,8 @@ public class App {
                     // search by name near exact
                     for (int i = 0; i < listst.size(); i++) {
                         if (listst.get(i).getName().equals(name)) {
-                            System.out.println(listst.get(i));
+                            // System.out.println(listst.get(i));
+                            listst.get(i).display();
                             break;
                         }
                     }
@@ -257,7 +262,8 @@ public class App {
                     double maxPrice = sc.nextDouble();
                     for (int i = 0; i < listst.size(); i++) {
                         if (listst.get(i).getPrice() >= minPrice && listst.get(i).getPrice() <= maxPrice) {
-                            System.out.println(listst.get(i));
+                            // System.out.println(listst.get(i));
+                            listst.get(i).display();
 
                         }
                     }
